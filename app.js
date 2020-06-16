@@ -1,4 +1,4 @@
-const gameContainer = document.getElementById("game");
+const gameContainer = document.getElementById("game-board");
 const scoreContainer = document.getElementById("score");
 const newGameButton = document.querySelector("button");
 let totalClicks = 0;
@@ -29,7 +29,7 @@ createDivsForColors(shuffledColors);
 
 // Initiate game when start game button clicked
 newGameButton.addEventListener('click', function(e) {
-    let gameBoard = document.querySelectorAll('#game div');
+    let gameBoard = document.querySelectorAll('#game-board div');
     for (let card of gameBoard) {
         card.remove();
     }
